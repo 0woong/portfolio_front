@@ -1,0 +1,119 @@
+.App {
+  color: #f0f4f5;
+  background-color: darkolivegreen;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+* {
+  font-family: "GmarketSansBold";
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  box-shadow: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  padding: 1rem 1rem 1rem 1rem;
+  height: min-content;
+}
+
+.navbar > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  list-style: none;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+}
+
+.navbar-collapse {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+
+hr.divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: olivedrab;
+  opacity: 1;
+}
+
+.App-header {
+  height: 100vh;
+  min-height: 40rem;
+  padding-bottom: 0;
+  background: linear-gradient(to bottom, rgba(107, 142, 35, 0.5) 0%, rgba(107, 142, 35, 0.5) 100%), url("../public/img/main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+footer {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  background-color: lightgray;
+  color: gray;
+}
