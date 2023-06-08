@@ -1,59 +1,63 @@
+import { faFacebook, faGithub, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ReactComponent as Kakaotalk } from "../assets/kakaotalk.svg";
 import React from "react";
 
 function Contact() {
   return (
-    <div id="contact">
-      <div className="">
-        <div className="">
-          <div className="">
-            <h2 className="">Contact</h2>
+    <section id="contact">
+      <div>
+        <div className="row justify-content-center">
+          <div>
+            <h2 className="link-title">Contact</h2>
             <hr className="divider" />
           </div>
         </div>
-        <div className="">
-          <div className="">
+        <div className="row justify-content-center">
+          <div className="link">
             <a target="_blank" rel="noopener noreferrer" href="http://qr.kakao.com/talk/Oj228OAk1a70FwHToovXlwpw.W0-">
-              <i className=""></i>
-              <div className="">kakao talk</div>
+              <Kakaotalk width="2rem" fill="white" />
+              <div className="link-desc">kakao talk</div>
             </a>
           </div>
-          <div className="">
+          <div className="link">
             <a target="_blank" rel="noopener noreferrer" href="mailto:jooyy1219@naver.com">
-              <i className=""></i>
-              <div className="">e-mail</div>
+              <FontAwesomeIcon icon={faEnvelope} size="2xl" />
+              <div className="link-desc">e-mail</div>
             </a>
           </div>
         </div>
       </div>
-      <div className="">
-        <div className="">
-          <div className="">
-            <h2 className="">Link</h2>
+      <div>
+        <div className="row justify-content-center">
+          <div>
+            <h2 className="link-title">Link</h2>
             <hr className="divider" />
           </div>
         </div>
-        <div className="">
-          <div className="">
+        <div className="row justify-content-center">
+          <div className="link">
             <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/yexngwxxng">
-              <i className=""></i>
-              <div className="">instagram</div>
+              <FontAwesomeIcon icon={faInstagram} size="2xl" />
+              <div className="link-desc">instagram</div>
             </a>
           </div>
-          <div className="">
+          <div className="link">
             <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/jooyy1219">
-              <i className=""></i>
-              <div className="">facebook</div>
+              <FontAwesomeIcon icon={faFacebook} size="2xl" />
+              <div className="link-desc">facebook</div>
             </a>
           </div>
-          <div className="">
+          <div className="link">
             <a target="_blank" rel="noopener noreferrer" href="https://github.com/0woong">
-              <i className=""></i>
-              <div className="">github</div>
+              <FontAwesomeIcon icon={faGithub} size="2xl" />
+              <div className="link-desc">github</div>
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 export default Contact;
