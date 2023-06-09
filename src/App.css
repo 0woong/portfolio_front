@@ -12,7 +12,6 @@
 }
 
 a {
-  color: white;
   text-decoration: none;
 }
 
@@ -26,6 +25,10 @@ body {
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+.header-desc > p {
+  margin-bottom: 2rem;
 }
 
 .navbar {
@@ -70,7 +73,8 @@ body {
 
 .navbar-change {
   position: fixed;
-  background-color: darkolivegreen;
+  background-color: white;
+  color: darkolivegreen;
   box-shadow: none;
   top: 0;
   bottom: 0;
@@ -91,7 +95,7 @@ body {
   width: 100%;
 }
 
-.page-section > .container {
+.about-bg > .container {
   width: 25%;
 }
 
@@ -113,6 +117,11 @@ hr.divider {
   margin: 1.5rem auto;
   background-color: olivedrab;
   opacity: 1;
+}
+
+svg {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .App-header {
@@ -139,8 +148,8 @@ hr.divider {
 }
 
 .move-button {
-  background-color: darkolivegreen;
-  color: #fff;
+  background-color: white;
+  color: darkolivegreen;
   border: none;
   border-radius: 20px;
   padding: 15px;
@@ -152,6 +161,7 @@ hr.divider {
 
 .move-button:hover {
   background-color: forestgreen;
+  color: white;
   transition: 0.7s;
 }
 
@@ -173,8 +183,40 @@ hr.divider {
   transition: 0.7s;
 }
 
+.projects-bg {
+  background-color: darkslategray;
+  padding: 8rem 0 0 0 !important;
+}
+
+.projects-bg > .container {
+  max-width: fit-content;
+}
+
+.projects-bg > .container > .row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.projects-box {
+  position: relative;
+  display: block;
+  width: 33.3%;
+}
+
+.projects-box-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+}
+
 .thumbnails {
-  max-width: 200px;
+  width: 100%;
+  height: 100%;
 }
 
 .page-section {
@@ -186,14 +228,14 @@ hr.divider {
   margin-bottom: 1.5rem;
 }
 
-.portfolio-desc {
-  background-color: darkseagreen;
+.projects-desc {
+  background-color: darkslategray;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
 .about-bg {
-  background-color: olive;
+  background-color: darkolivegreen;
 }
 
 .skill-bg {
@@ -221,6 +263,11 @@ hr.divider {
 
 .link-desc {
   margin-top: 1rem;
+}
+
+.link > a {
+  color: white;
+  text-decoration: none;
 }
 
 footer {

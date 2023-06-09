@@ -36,8 +36,8 @@ function Nav() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="portfolio" spy={true} smooth={true}>
-                Portfolio
+              <Link className="nav-link" to="projects" spy={true} smooth={true}>
+                Projects
               </Link>
             </li>
             <li className="nav-item">
