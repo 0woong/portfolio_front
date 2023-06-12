@@ -14,11 +14,23 @@ function Modal({ displayModal, children, setDisplayModal }) {
       setDisplayModal(false);
     }
   };
+  useEffect(() => {
+    document.body.style.cssText = `
+      position: fixed; 
+      top: -${window.scrollY}px;
+      overflow-y: scroll;
+      width: 100%;`;
+    return () => {
+      const scrollY = document.body.style.top;
+      document.body.style.cssText = "";
+      window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
+    };
+  }, []);
   const closeModal = () => {
     setDisplayModal(false);
   };
   return (
-    <div style={{ display: displayModal ? "block" : "none" }} className={styles.container}>
+    <div className={styles.container}>
       <div ref={wrapperRef} className={styles.modalBox}>
         <button className={styles.close} onClick={closeModal}>
           X

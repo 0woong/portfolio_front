@@ -9,7 +9,9 @@ function Projects() {
   const [displayModal, setDisplayModal] = useState(false);
 
   // 모달창 노출
-  const showModal = () => setDisplayModal(true);
+  const showModal = () => {
+    setDisplayModal(true);
+  };
 
   return (
     <>
@@ -62,7 +64,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <Modal displayModal={displayModal} setDisplayModal={setDisplayModal}></Modal>
+        {displayModal && <Modal displayModal={displayModal} setDisplayModal={setDisplayModal}></Modal>}
       </section>
       <section className="page-section projects-desc">
         <div className="">
