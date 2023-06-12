@@ -212,8 +212,18 @@ svg {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  position: absolute;
   text-align: center;
+  background-color: rgba(107, 142, 35, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+  font-size: 2rem;
+}
+
+.projects-box-desc:hover {
+  opacity: 1;
 }
 
 .thumbnails {

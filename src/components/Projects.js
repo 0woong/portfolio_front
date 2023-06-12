@@ -23,43 +23,43 @@ function Projects() {
             <div className="projects-box">
               <img className="thumbnails" src={projectImg} alt="..." />
               <div className="projects-box-desc">
-                <div className="project-skill">Next js</div>
+                <div className="project-skill">React</div>
                 <div className="project-name">Todo List</div>
               </div>
             </div>
             <div className="projects-box">
               <img className="thumbnails" src={projectImg} alt="..." />
               <div className="projects-box-desc">
-                <div className="project-skill"></div>
-                <div className="project-name"></div>
+                <div className="project-skill">React</div>
+                <div className="project-name">Tetris</div>
               </div>
             </div>
             <div className="projects-box">
               <img className="thumbnails" src={projectImg} alt="..." />
               <div className="projects-box-desc">
-                <div className="project-skill"></div>
-                <div className="project-name"></div>
+                <div className="project-skill">Vanilla JS</div>
+                <div className="project-name">Exchange Rate</div>
               </div>
             </div>
             <div className="projects-box">
               <img className="thumbnails" src={projectImg} alt="..." />
               <div className="projects-box-desc">
-                <div className="project-skill"></div>
-                <div className="project-name"></div>
+                <div className="project-skill">Vanilla JS</div>
+                <div className="project-name">오늘 뭐 먹지?</div>
               </div>
             </div>
             <div className="projects-box">
               <img className="thumbnails" src={projectImg} alt="..." />
               <div className="projects-box-desc">
-                <div className="project-skill"></div>
-                <div className="project-name"></div>
+                <div className="project-skill">Vanilla JS</div>
+                <div className="project-name">가위바위보</div>
               </div>
             </div>
             <div className="projects-box">
               <img className="thumbnails" src={projectImg} alt="..." />
               <div className="projects-box-desc">
-                <div className="project-skill"></div>
-                <div className="project-name"></div>
+                <div className="project-skill">Vanilla JS</div>
+                <div className="project-name">가계부</div>
               </div>
             </div>
           </div>
