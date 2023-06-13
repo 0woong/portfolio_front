@@ -33,3 +33,22 @@
   right: 10px;
   top: 10px;
 }
+
+.prevButton {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  left: -20%;
+  color: white;
+  size: 5x;
+  cursor: pointer;
+}
+
+.nextButton {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  right: -20%;
+  color: white;
+  cursor: pointer;
+}

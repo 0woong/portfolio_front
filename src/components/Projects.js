@@ -64,7 +64,30 @@ function Projects() {
             </div>
           </div>
         </div>
-        {displayModal && <Modal displayModal={displayModal} setDisplayModal={setDisplayModal}></Modal>}
+        {displayModal && (
+          <Modal displayModal={displayModal} setDisplayModal={setDisplayModal}>
+            <ul className="projects-ul">
+              <li>
+                <img className="thumbnails" src={projectImg} alt="..." />
+              </li>
+              <li>
+                <img className="thumbnails" src={projectImg} alt="..." />
+              </li>
+              <li>
+                <img className="thumbnails" src={projectImg} alt="..." />
+              </li>
+              <li>
+                <img className="thumbnails" src={projectImg} alt="..." />
+              </li>
+              <li>
+                <img className="thumbnails" src={projectImg} alt="..." />
+              </li>
+              <li>
+                <img className="thumbnails" src={projectImg} alt="..." />
+              </li>
+            </ul>
+          </Modal>
+        )}
       </section>
       <section className="page-section projects-desc">
         <div className="">
