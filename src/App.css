@@ -282,17 +282,6 @@ svg {
   text-decoration: none;
 }
 
-.projects-ul {
-  white-space: nowrap;
-}
-
-.projects-ul > li {
-  margin-right: 10vw;
-  max-width: 600px;
-  max-height: 300px;
-  display: inline-block;
-}
-
 footer {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
