@@ -63,12 +63,30 @@ function Modal({ displayModal, children, setDisplayModal }) {
         </button>
         <div className={styles.projectsList}>
           <div className={styles.projectsImg} ref={slideRef}>
-            <img className={styles.detailImg} src={projectImg} alt="..." />
-            <img className={styles.detailImg} src={projectImg} alt="..." />
-            <img className={styles.detailImg} src={projectImg} alt="..." />
-            <img className={styles.detailImg} src={projectImg} alt="..." />
-            <img className={styles.detailImg} src={projectImg} alt="..." />
-            <img className={styles.detailImg} src={projectImg} alt="..." />
+            <div>
+              <img className={styles.detailImg} src={projectImg} alt="..." />
+              <p className={styles.detailDesc}>Todo List</p>
+            </div>
+            <div>
+              <img className={styles.detailImg} src={projectImg} alt="..." />
+              <p className={styles.detailDesc}>Tetris</p>
+            </div>
+            <div>
+              <img className={styles.detailImg} src={projectImg} alt="..." />
+              <p className={styles.detailDesc}>Exchange Rate</p>
+            </div>
+            <div>
+              <img className={styles.detailImg} src={projectImg} alt="..." />
+              <p className={styles.detailDesc}>오늘 뭐 먹지?</p>
+            </div>
+            <div>
+              <img className={styles.detailImg} src={projectImg} alt="..." />
+              <p className={styles.detailDesc}>가위바위보</p>
+            </div>
+            <div>
+              <img className={styles.detailImg} src={projectImg} alt="..." />
+              <p className={styles.detailDesc}>가계부</p>
+            </div>
           </div>
         </div>
         <div className={styles.prevButton} onClick={prevButton}>
