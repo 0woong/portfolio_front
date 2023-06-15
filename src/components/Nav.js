@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
 function Nav() {
+  // 현재 스크롤 위치
   const [scrollPosition, setScrollPosition] = useState(0);
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
@@ -9,7 +10,7 @@ function Nav() {
   useEffect(() => {
     window.addEventListener("scroll", updateScroll);
   });
-
+  // 스크롤 최상위로 이동
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

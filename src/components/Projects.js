@@ -67,10 +67,8 @@ function Projects() {
         {displayModal && <Modal displayModal={displayModal} setDisplayModal={setDisplayModal}></Modal>}
       </section>
       <section className="page-section projects-desc">
-        <div className="">
-          <h2 className="">지금 이 순간도 개발중!</h2>
-          <FontAwesomeIcon icon={faRotate} size="xl" style={{ color: "#ffffff" }} spin />
-        </div>
+        <h2 className="">지금 이 순간도 개발중!</h2>
+        <FontAwesomeIcon icon={faRotate} size="xl" style={{ color: "#ffffff" }} spin />
       </section>
     </>
   );

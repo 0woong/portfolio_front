@@ -21,7 +21,7 @@ function Modal({ displayModal, children, setDisplayModal }) {
   // 스크롤 방지
   useEffect(() => {
     document.body.style.cssText = `
-      position: fixed; 
+      position: fixed;
       top: -${window.scrollY}px;
       overflow-y: scroll;
       width: 100%;`;
@@ -31,6 +31,7 @@ function Modal({ displayModal, children, setDisplayModal }) {
       window.scrollTo(0, parseInt(scrollY || "0", 10) * -1);
     };
   }, []);
+  // 모달창 닫기
   const closeModal = () => {
     setDisplayModal(false);
   };
@@ -44,7 +45,7 @@ function Modal({ displayModal, children, setDisplayModal }) {
   useEffect(() => {
     slideRef.current.style.transition = "all 0.5s ease-in-out";
     slideRef.current.style.transform = `translateX(-${slideRange}px)`;
-  }, [currentImgOrder]);
+  }, [currentImgOrder, slideRange]);
 
   const nextButton = () => {
     if (currentImgOrder === 5) return;
