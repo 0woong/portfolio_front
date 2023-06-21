@@ -4,7 +4,7 @@ import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import projectImg from "../../assets/main.jpg";
 
-function Modal({ displayModal, children, setDisplayModal }) {
+function Modal(props) {
   // 모달 바깥 클릭시 종료
   const wrapperRef = useRef();
   useEffect(() => {
@@ -15,7 +15,7 @@ function Modal({ displayModal, children, setDisplayModal }) {
   });
   const handleClickOutside = (event) => {
     if (wrapperRef && !wrapperRef.current.contains(event.target)) {
-      setDisplayModal(false);
+      props.setDisplayModal(false);
     }
   };
   // 스크롤 방지
@@ -33,28 +33,28 @@ function Modal({ displayModal, children, setDisplayModal }) {
   }, []);
   // 모달창 닫기
   const closeModal = () => {
-    setDisplayModal(false);
+    props.setDisplayModal(false);
   };
 
   // 이미지 슬라이드
   const slideRef = useRef(null);
-  const [currentImgOrder, setcCurrentImgOrder] = useState(0);
+  const [currentImgOrder, setCurrentImgOrder] = useState(props.modalNo);
   const IMG_WIDTH = 450;
   const slideRange = currentImgOrder * IMG_WIDTH;
 
   useEffect(() => {
-    slideRef.current.style.transition = "all 0.5s ease-in-out";
+    slideRef.current.style.transition = "0.3s ease-in-out";
     slideRef.current.style.transform = `translateX(-${slideRange}px)`;
   }, [currentImgOrder, slideRange]);
 
   const nextButton = () => {
     if (currentImgOrder === 5) return;
-    setcCurrentImgOrder(currentImgOrder + 1);
+    setCurrentImgOrder(currentImgOrder + 1);
   };
 
   const prevButton = () => {
     if (currentImgOrder === 0) return;
-    setcCurrentImgOrder(currentImgOrder - 1);
+    setCurrentImgOrder(currentImgOrder - 1);
   };
   return (
     <div className={styles.container}>
