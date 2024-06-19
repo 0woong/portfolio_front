@@ -7,7 +7,7 @@ function Header() {
       <div className="container h-100">
         <div className="align-items-center justify-content-center text-center">
           <div className="header-title">
-            <h1 className="">Front-End Developer</h1>
+            <h1 className="">Web Developer</h1>
             <hr className="divider" />
           </div>
           <div className="header-desc">
