@@ -47,12 +47,12 @@ function Modal(props) {
   }, [currentImgOrder, slideRange]);
 
   const nextButton = () => {
-    if (currentImgOrder === 5) return;
+    if (currentImgOrder === 5) return setCurrentImgOrder(0);
     setCurrentImgOrder(currentImgOrder + 1);
   };
 
   const prevButton = () => {
-    if (currentImgOrder === 0) return;
+    if (currentImgOrder === 0) return setCurrentImgOrder(5);
     setCurrentImgOrder(currentImgOrder - 1);
   };
 
